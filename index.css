@@ -1,6 +1,22 @@
 body {
     font-family: 'Open Sans', serif;
-    padding-top: 60px;
     color: #868e96;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
 }
 
+.img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.25rem solid;
+    border-radius: 50%;
+}
+
+#sideNav {
+    display: flex;
+    /* position: fixed; */
+    flex-direction: column;
+    width: 15rem;
+    background-color:blueviolet;
+}
