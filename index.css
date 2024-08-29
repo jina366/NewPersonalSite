@@ -1,10 +1,10 @@
-/* color theme 
-    293241 (gunmetal)
-    3D5A80 (YinMn blue)
-    98C1D9 (powder blue)
-    E0FBFC (light cyan)
-    EE6C4D (burnt sienna)
-    */
+:root {
+  --white: #F2EDF1;
+  --lightblue: #80B4CF;
+  --darkblue: #3D5A80;
+  --gray: #757380;
+  --darkpurple: #272230;
+}
 
 :root {
   overscroll-behavior: none;
@@ -12,11 +12,15 @@
 
 body {
   font-family: 'Signika Negative', serif;
-  background-color: #e0fbfc;
-  color: #293241;
+  margin: 0;
+}
+
+#page {
+  background-color: red;
+  background-color: var(--white);
+  color: var(--darkpurple);
   display: flex;
   flex-direction: row;
-  margin: 0;
   overflow: auto;
   height: 100%;
 }
@@ -35,17 +39,25 @@ body {
   flex-direction: column;
   width: 16rem;
   height: 100vh;
-  background-color: #3d5a80;
+  background-color: var(--darkblue);
   padding: 1rem;
   text-align: center;
   flex-grow: 0;
   text-transform: uppercase;
   justify-content: center;
-  color: #98c1d9;
+  color: var(--lightblue);
 }
 
 .navTab li {
   padding: 1rem;
+  font-size: larger;
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--white);
+}
+.affix {
+  color: red;
 }
 
 ul {
@@ -53,14 +65,18 @@ ul {
   padding-left: 0;
 }
 
-.rightSide {
-  padding-left: 18rem;
+#rightSide {
+  margin-left: 18rem;
+  /* padding-left: 18rem; */
 }
 
 section {
   border-bottom: 1px solid rgb(213, 208, 208);
   padding: 3rem;
 }
+/* .section-page {
+  height: 700px;
+} */
 
 h1,
 h2 {
@@ -83,7 +99,7 @@ h1 {
 .fa-linkedin,
 .fa-github,
 .fa-instagram {
-  background: #98c1d9;
+  background: var(--lightblue);
   color: white;
 }
 .socialIcon {
