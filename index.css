@@ -109,3 +109,32 @@ h1 {
 .socialIcon li {
   padding: 1rem;
 }
+
+/* Right Side */
+.brainstorm-pic {
+  width: 250px;
+}
+#brainstorm-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.website-pic {
+  width: 350px;
+}
+#website-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+#cat-pic-container {
+  display: flex;
+  justify-content: center;
+}
+#cat-pic {
+  width: 460px;
+  border-radius: 30%;
+}
