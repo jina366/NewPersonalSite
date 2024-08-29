@@ -1,7 +1,7 @@
 :root {
-  --white: #F2EDF1;
-  --lightblue: #80B4CF;
-  --darkblue: #3D5A80;
+  --white: #f2edf1;
+  --lightblue: #80b4cf;
+  --darkblue: #3d5a80;
   --gray: #757380;
   --darkpurple: #272230;
 }
@@ -16,7 +16,6 @@ body {
 }
 
 #page {
-  background-color: red;
   background-color: var(--white);
   color: var(--darkpurple);
   display: flex;
@@ -80,7 +79,12 @@ h2 {
 h1 {
   font-size: 3rem;
   color: var(--darkblue);
-  margin:20px 20px 10px 0;
+  margin: 20px 20px 10px 0;
+}
+
+h3,
+h4 {
+  margin: 0px;
 }
 
 .fa {
@@ -111,8 +115,23 @@ h1 {
 }
 
 .paragraph {
-font-size: large;
-line-height: 1.5;
+  font-size: large;
+  line-height: 1.5;
+}
+
+.resume-content {
+  background-color: var(--lightblue);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+.date {
+  font-size: 13px;
+  text-align: right;
+  background-color: var(--gray);
+  color: var(--white);
+  padding-right: 30px;
+  border-radius: 10px;
 }
 
 .brainstorm-pic {
